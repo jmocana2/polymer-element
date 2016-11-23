@@ -1,0 +1,20 @@
+{
+  "name": "polymer-element",
+  "homepage": "https://github.com/jmocana2/polymer-element",
+  "authors": [
+    "Jose Maria <telecomu4@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "1.0.0"
+  }
+}
