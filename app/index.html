@@ -57,6 +57,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <!-- For shared styles, shared-styles.html import in elements.html -->
   <style is="custom-style" include="shared-styles"></style>
+  <style is="custom-style" include="iron-flex iron-flex-alignment"></style>
 </head>
 
 <body unresolved>
@@ -90,6 +91,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <a data-route="contact" href="{{baseUrl}}contact">
             <iron-icon icon="mail"></iron-icon>
             <span>Contact</span>
+          </a>
+
+          <a data-route="map" href="{{baseUrl}}map">
+            <iron-icon icon="star"></iron-icon>
+            <span>Map</span>
+          </a>
+
+          <a data-route="my-layout" href="{{baseUrl}}my-layout">
+            <iron-icon icon="polymer"></iron-icon>
+            <span>My layout</span>
           </a>
         </paper-menu>
       </paper-scroll-header-panel>
@@ -152,6 +163,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </ul>
                 <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
               </paper-material>
+              <paper-material elevation="1">
+                <h2 id="license">Mi primer componente importado</h2>
+                <polymer-elemet foo="Polymer atributo"></polymer-elemet>
+              </paper-material>
             </section>
 
             <section data-route="users" tabindex="-1">
@@ -178,6 +193,30 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <p>This is the contact section</p>
               </paper-material>
             </section>
+
+            <section data-route="map" tabindex="-1">
+              <paper-material elevation="1">
+                <h1 class="page-title" tabindex="-1">Map</h1>
+                <style>
+                  google-map {
+                    height: 600px;
+                  }
+                </style>
+                <google-map latitude="37.77493" longitude="-122.41942"></google-map>
+              </paper-material>
+            </section>
+
+            <section data-route="my-layout" tabindex="-1">
+              <paper-material elevation="1">
+                <h1 class="page-title" tabindex="-1">My layout</h1>              
+                <div class="horizontal around-justified layout">
+                  <p>Hola Mundo</p>
+                  <p>Hola Mundo</p>
+               
+                </div>
+              </paper-material>
+            </section>
+
           </iron-pages>
         </div>
       </paper-scroll-header-panel>
